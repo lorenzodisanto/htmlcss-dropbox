@@ -69,7 +69,7 @@ header {
   margin-right: 20px;
 }
 
-header a {
+a {
   text-decoration: none;
   font-size: 0.8rem;
   color: #686868;
@@ -94,45 +94,71 @@ section {
 
 /* SEZIONE JUMBOTRON */
 .jumbotron {
-  min-height: 800px;
+  min-height: 480px;
   background-color: #b4d0e7;
 
-  /* debug */
-  border: 1px dashed red;
+  /* debug 
+  border: 1px dashed red;*/
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: bold;
   margin: 20px;
-  margin-top: 80px;
+  margin-top: 40px;
 
-  /* debug */
-  border: 1px dashed black;
+  /* debug 
+  border: 1px dashed black;*/
 }
 
 .jumbo-body {
   margin: 20px;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  /* debug */
-  border: 1px dashed black;
+  gap: 3%;
+
+  /* debug 
+  border: 1px dashed black;*/
 }
 
 .jumbo-text {
-  width: 35%;
-  height: 450px;
+  width: 30%;
+  height: 280px;
+  font-size: 0.8rem;
+  line-height: 18px;
 
-  /* debug */
-  border: 1px dashed black;
+  /* debug 
+  border: 1px dashed black;*/
+}
+
+.jumbo-text a {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.jumbo-text .cancel {
+  color: black;
+  padding-left: 0;
+}
+
+.arrow {
+  font-size: 3rem;
+  color: black;
+  margin-top: 10px;
 }
 
 .jumbo-image {
-  width: 65%;
-  height: 450px;
+  width: 67%;
+  height: 280px;
 
-  /* debug */
-  border: 1px dashed black;
+  /* debug 
+  border: 1px dashed black;*/
+}
+
+.jumbo-image img {
+  position: relative;
+  left: -25px;
 }
 
 /* SEZIONE CARDS */
