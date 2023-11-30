@@ -20,6 +20,12 @@ ul {
 
 li {
   display: inline-block;
+  margin: 10px;
+}
+
+.button {
+  padding: 8px 15px;
+  font-size: 0.8rem;
 }
 /* UTILS */
 
@@ -45,12 +51,40 @@ li {
 
 header {
   height: 80px;
+  display: flex;
+  justify-content: space-between;
   background-color: white;
 
-  /* degub */
-  border: 1px dashed red;
+  /* degub 
+  border: 1px dashed red;*/
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.header-left img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #686868;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.run {
+  background-color: #0061ff;
+  color: white;
+}
 /* MAIN */
 
 section {
