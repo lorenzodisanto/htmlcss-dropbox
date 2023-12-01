@@ -7,6 +7,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
 }
 
 img {
@@ -16,9 +17,10 @@ img {
 
 .button {
   padding: 8px 15px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-decoration: none;
 }
+
 /* UTILS */
 
 .container-large {
@@ -26,8 +28,8 @@ img {
   margin: 0 auto;
   padding: 0;
 
-  /* debug */
-  border: 1px dashed black;
+  /* debug 
+  border: 1px dashed black;*/
 }
 
 .container-small {
@@ -35,8 +37,20 @@ img {
   margin: 0 auto;
   padding: 0;
 
-  /* debug */
-  border: 1px dashed black;
+  /* debug 
+  border: 1px dashed black;*/
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 0.95rem;
 }
 
 /* HEADER */
@@ -66,13 +80,13 @@ header li {
   padding: 10px;
 }
 .header-left img {
-  width: 100px;
+  width: 120px;
   margin-right: 20px;
 }
 
 header a {
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #686868;
 }
 
@@ -129,7 +143,7 @@ h1 {
   width: 25%;
   height: 370px;
   font-size: 1rem;
-  line-height: 18px;
+  line-height: 20px;
 
   /* debug 
   border: 1px dashed black;*/
@@ -137,7 +151,7 @@ h1 {
 
 .jumbo-text a {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .jumbo-text .cancel {
@@ -148,7 +162,7 @@ h1 {
 .arrow {
   font-size: 3rem;
   color: black;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .jumbo-image {
@@ -178,10 +192,6 @@ h1 {
 
   /* debug 
   border: 1px dashed black;*/
-}
-
-h2 {
-  font-size: 2.5rem;
 }
 
 .plan-option h2 {
@@ -223,63 +233,60 @@ h2 {
 .column {
   width: calc(100% / 3 - 40px);
   min-height: 900px;
-  border: 1px solid black;
+  border: 1px solid #d8d8db;
 
   /* debug 
   border: 1px dashed black;*/
 }
 
+.column i {
+  margin-right: 5px;
+}
+
 .column-title {
   text-align: center;
   padding: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #d8d8db;
 }
 
 .column-body {
   padding: 20px 30px;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
-.column-body-top * {
-  margin: 20px 0;
-}
-
-.column-body-center * {
-  margin: 20px 0;
+.column-body-top {
+  line-height: 30px;
 }
 
 .column-body-center {
   margin-top: 30px;
 }
 
-.column-body ul {
-  list-style: none;
+.column-body p {
+  padding-bottom: 30px;
+  display: flex;
 }
 
-.column-body-center .button,
-span {
-  display: inline-block;
+.link-buy {
+  margin-left: 5px;
 }
 
-.button {
-  text-align: center;
-}
-
-hr {
+.column-body hr {
   width: 50px;
-}
-
-.column-body-end * {
-  margin: 20px 0;
 }
 
 .single-column {
   height: 250px;
   margin-top: 50px;
-  border: 1px solid black;
+  border: 1px solid #d8d8db;
 
   /* debug 
   border: 1px dashed black;*/
+}
+
+.column-body-end h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .sigle-column-body {
@@ -327,22 +334,20 @@ hr {
 }
 
 .partner-text {
-  width: 40%;
+  width: 30%;
   height: 550px;
   padding: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
 
   /* debug 
   border: 1px dashed black;*/
 }
 
-.partner-body-text h4 {
-  font-size: 1.3rem;
-}
 .partner-body-text p {
-  font-size: 0.8rem;
   line-height: 18px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .partner-body-text .button {
@@ -354,25 +359,27 @@ hr {
 .operation {
   height: 1300px;
 
-  /* debug */
-  border: 1px dashed red;
+  /* debug 
+  border: 1px dashed red;*/
 }
 
 h2 {
   height: 100px;
   margin-bottom: 10px;
+  margin-left: 25px;
 
-  /* debug */
-  border: 1px dashed black;
+  /* debug 
+  border: 1px dashed black;*/
 }
 
 .box-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 15px;
 
-  /* debug */
-  border: 1px dashed black;
+  /* debug 
+  border: 1px dashed black;*/
 }
 
 .image-box {
@@ -380,28 +387,35 @@ h2 {
   width: calc(100% / 3 - 20px);
   padding: 10px;
 
-  /* debug */
-  border: 1px dashed black;
+  /* debug 
+  border: 1px dashed black;*/
+}
+
+.box-container h4 {
+  margin-bottom: 20px;
 }
 
 /* SEZIONE LINK CLIENTI */
 .client {
   height: 400px;
 
-  /* debug */
-  border: 1px dashed red;
+  /* debug 
+  border: 1px dashed red;*/
 }
 
 .client-box {
   height: 250px;
   width: 60%;
 
-  /* debug */
-  border: 1px dashed black;
+  /* debug 
+  border: 1px dashed black;*/
 }
 
+.client-box h2 {
+  margin-bottom: 50px;
+}
 .client-box span {
-  margin-top: 30px;
+  margin-left: 25px;
 }
 
 /* SEZIONE IMMAGINI QUADRATE */
@@ -496,8 +510,8 @@ h2 {
   height: 300px;
   background-color: #b4d0e7;
 
-  /* debug */
-  border: 1px dashed red;
+  /* debug 
+  border: 1px dashed red;*/
 }
 
 .free-box {
@@ -505,8 +519,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* debug */
-  border: 1px dashed black;
+  /* debug 
+  border: 1px dashed black;*/
 }
 
 .free-box-title {
@@ -528,20 +542,25 @@ h2 {
 .question {
   height: 600px;
 
-  /* debug */
-  border: 1px dashed red;
+  /* debug 
+  border: 1px dashed red;*/
 }
 
 .question-box {
   height: 420px;
 
-  /* debug */
-  border: 1px dashed black;
+  /* debug 
+  border: 1px dashed black;*/
 }
 
 .question-box * {
-  padding: 40px;
+  margin: 40px;
+  padding-bottom: 40px;
   border-bottom: 1px solid grey;
+}
+
+.question-box h2 {
+  padding-left: 0;
 }
 
 /* FOOTER */
@@ -552,8 +571,8 @@ h2 {
   background-color: black;
   color: white;
 
-  /* debug */
-  border: 1px dashed red;
+  /* debug 
+  border: 1px dashed red;*/
 }
 
 .link-container {
@@ -585,7 +604,15 @@ h2 {
 .language {
   height: 100px;
   background-color: black;
+  color: white;
 
-  /* debug */
-  border: 1px dashed red;
+  /* debug 
+  border: 1px dashed red;*/
+}
+
+.line-foot {
+  border-top: 1px solid white;
+  width: 100px;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
